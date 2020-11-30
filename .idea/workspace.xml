@@ -34,7 +34,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34b3024b-329d-4a11-b060-b996179b6cfe" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../QaQc-Part2/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QaQc-Part2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606765886687</updated>
       <workItem from="1606765887815" duration="1569000" />
-      <workItem from="1606767862224" duration="2475000" />
+      <workItem from="1606767862224" duration="2527000" />
     </task>
     <servers />
   </component>
