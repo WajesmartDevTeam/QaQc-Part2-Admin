@@ -32,7 +32,7 @@
             slot="footer"
             class="md-alignment-right"
           >
-            <div class="stats">2/Month</div>
+            <div class="stats" v-html="total_visits"></div>
           </template>
         </stats-card>
       </div>
@@ -229,7 +229,7 @@
                     title="view report"
                     class="bg-warning"
                     style="padding: 3px 15px;  border-radius: 5px;"
-                    v-bind:href="'scoredreportview/' + item.form_id"
+                    v-bind:href="'scoredreportview/' + item.store_id + '/'+selectedPeriod"
                   >
                     <md-icon class="text-white">dvr</md-icon>
                   </a>
@@ -255,6 +255,7 @@ export default {
       no_form: false,
       record_date: "",
       role: "",
+      total_visits: "",
       storeId: "",
       storeName: "",
       compliance: [],
@@ -330,10 +331,11 @@ export default {
             }
             else {
               this.forms = response.data.Reports;
-
             }
             if (this.forms.length == 0) {
               this.no_form = true
+            } else {
+              this.total_visits = response.data.Total_Visits
             }
           }
         })
