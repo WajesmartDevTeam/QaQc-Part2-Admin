@@ -224,12 +224,22 @@
                 <md-table-cell md-label="Date">{{
                   item.created_at
                 }}</md-table-cell>
-                <md-table-cell md-label="Action">
+                <md-table-cell md-label="Scored Form">
                   <a
                     title="view report"
                     class="bg-warning"
                     style="padding: 3px 15px;  border-radius: 5px;"
                     v-bind:href="'scoredreportview/' + item.store_id + '/'+selectedPeriod"
+                  >
+                    <md-icon class="text-white">dvr</md-icon>
+                  </a>
+                </md-table-cell>
+                <md-table-cell md-label="Non Scored Form">
+                  <a
+                      title="view report"
+                      class="bg-warning"
+                      style="padding: 3px 15px;  border-radius: 5px;"
+                      v-bind:href="'nonscoredreportview/' + item.store_id + '/'+selectedPeriod"
                   >
                     <md-icon class="text-white">dvr</md-icon>
                   </a>

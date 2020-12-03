@@ -110,6 +110,7 @@ export default {
 
   },
   methods: {
+
     async signIn () {
       var html =
         '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';

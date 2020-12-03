@@ -182,9 +182,10 @@ const routes = [{
           },
 
          {
-            path: "nonscoredreportview/:id",
-          name: "NON SCORED REPORT VIEW",
-             component: Non_Scored_View
+            path: "nonscoredreportview/:id/:date",
+            name: "NON SCORED REPORT VIEW",
+             component: Non_Scored_View,
+             props: true
          }
         ]
     }

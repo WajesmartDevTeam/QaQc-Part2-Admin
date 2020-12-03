@@ -33,8 +33,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34b3024b-329d-4a11-b060-b996179b6cfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Layout/DashboardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Layout/DashboardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Non_Scored_Reports.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Non_Scored_Reports.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +57,8 @@
   <component name="ProjectId" id="1l1Y6ClQnzNyMvH7hobKaeLGaaw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -77,6 +86,7 @@
       <updated>1606765886687</updated>
       <workItem from="1606765887815" duration="1569000" />
       <workItem from="1606767862224" duration="2706000" />
+      <workItem from="1606975815206" duration="10261000" />
     </task>
     <servers />
   </component>
@@ -96,6 +106,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="674" y="406" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606980887649">
+      <screen x="0" y="0" width="1824" height="1216" />
+    </state>
+    <state x="674" y="406" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1824.1216@0.0.1824.1216" timestamp="1606980887649" />
     <state x="693" y="363" key="FileChooserDialogImpl" timestamp="1606766126952">
       <screen x="0" y="0" width="1824" height="1216" />
     </state>

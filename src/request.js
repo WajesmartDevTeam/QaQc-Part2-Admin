@@ -26,6 +26,7 @@ export default {
         var request_urls = {
             //openings: 'listappliedjobposting',
             scoredreportview: "getFullReport",
+            nonscoredreportview: "getFullReportNonScoring",
             total_reports: "getTotalFormsforSuperAdmin",
             action_plans: "actionPlans",
             stores: "allstores",
