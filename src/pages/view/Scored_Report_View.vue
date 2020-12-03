@@ -142,7 +142,7 @@
               class="col-4 h-25"
             >
               <img
-                :src="'http://localhost:8000'+img.answers"
+                :src="'http://qaqc-back.marketsquareng.website/'+img.answers"
                 class="img-fluid"
                 style="height: 200px;"
               >

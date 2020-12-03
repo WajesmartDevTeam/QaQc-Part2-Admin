@@ -72,7 +72,7 @@ export default {
         auth: {
           clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
           authority: "https://login.microsoftonline.com/ce18dbbe-5ce8-4dac-bbcc-874dba4c0a40",//This is your tenant info
-          postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          postLogoutRedirectUri: "https://qaqc-admin.marketsquareng.website/"
         }
       },
       graphConfig: {

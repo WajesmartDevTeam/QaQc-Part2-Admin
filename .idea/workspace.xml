@@ -35,13 +35,12 @@
     <list default="true" id="34b3024b-329d-4a11-b060-b996179b6cfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Layout/DashboardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Layout/DashboardLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Non_Scored_Reports.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Non_Scored_Reports.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/view/Scored_Report_View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/Scored_Report_View.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QaQc-Part2/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,9 @@
       <updated>1606765886687</updated>
       <workItem from="1606765887815" duration="1569000" />
       <workItem from="1606767862224" duration="2706000" />
-      <workItem from="1606975815206" duration="10261000" />
+      <workItem from="1606975815206" duration="10595000" />
+      <workItem from="1606989905606" duration="1191000" />
+      <workItem from="1606993183088" duration="10008000" />
     </task>
     <servers />
   </component>
@@ -114,5 +115,9 @@
       <screen x="0" y="0" width="1824" height="1216" />
     </state>
     <state x="693" y="363" key="FileChooserDialogImpl/0.0.1824.1216@0.0.1824.1216" timestamp="1606766126952" />
+    <state x="620" y="313" width="585" height="590" key="find.popup" timestamp="1607005757624">
+      <screen x="0" y="0" width="1824" height="1216" />
+    </state>
+    <state x="620" y="313" width="585" height="590" key="find.popup/0.0.1824.1216@0.0.1824.1216" timestamp="1607005757624" />
   </component>
 </project>

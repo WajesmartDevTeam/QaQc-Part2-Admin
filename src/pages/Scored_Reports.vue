@@ -327,6 +327,7 @@ export default {
           if (response.type == "ammvr") {
             if (response.data.Reports.length == 0) {
               this.no_form = true
+              this.total_visits = 0;
             }
             if (this.role == "storeManager") {
               this.forms = []
@@ -341,9 +342,11 @@ export default {
             }
             else {
               this.forms = response.data.Reports;
+              this.no_form = false
             }
             if (this.forms.length == 0) {
-              this.no_form = true
+              this.total_visits = 0;
+              this.no_form = true;
             } else {
               this.total_visits = response.data.Total_Visits
             }
@@ -422,8 +425,8 @@ export default {
             if (response.data.length == 0) {
               this.no_form = true
             }
-
             else {
+              this.no_form = false
               // console.log(response.data)
               if (this.role == 'storeManager') {
                 this.compliance = []

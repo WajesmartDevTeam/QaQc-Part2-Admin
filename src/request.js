@@ -3,7 +3,8 @@ import Vue from "vue";
 import store from "./store";
 
 // const URL = "https://qa.sundryhrms.website/api/";
-const URL = "http://localhost:8000/api/";
+// const URL = "http://localhost:8000/api/";
+const URL = "https://qaqc-back.marketsquareng.website/api/";
 
 export default {
     name: "Request",
