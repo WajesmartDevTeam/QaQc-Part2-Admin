@@ -25,11 +25,14 @@ export default {
         auth: {
           clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
           authority: "https://login.microsoftonline.com/ce18dbbe-5ce8-4dac-bbcc-874dba4c0a40",
-          postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          // postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          postLogoutRedirectUri: "https://qaqc-admin.marketsquareng.website/",
         }
       },
       graphConfig: {
-        graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf"
+        graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf",
+        // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/e360bff7-b072-46b5-b3c3-642716ebf740/members"
+        
       },
       requestObj: {
         scopes: ["group.read.all"]
@@ -127,7 +130,7 @@ export default {
       let role;
       data.value.forEach(i => {
 
-        if (i.mailNickname == "storemanagers" || i.mailNickname == "superadmins") {
+        if (i.mailNickname == "storemanagers" || i.mailNickname == "superadmin") {
           this.$store.dispatch('loggedIn', true)
           access = true;
           role = i.mailNickname;

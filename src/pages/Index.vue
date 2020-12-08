@@ -77,6 +77,7 @@ export default {
       },
       graphConfig: {
         // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/bc01e981-740d-48f7-b430-ad01d7995c98/members"
+        // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/e360bff7-b072-46b5-b3c3-642716ebf740/members"
         graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf"
       },
       requestObj: {
