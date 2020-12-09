@@ -370,10 +370,7 @@ export default {
       this.$socket
         .makeGetRequest(recent)
         .then(response => {
-
           if (response.type == "ammvr_compliance") {
-
-
             this.top_stores = response.data.compliant_Stores;
             this.least_stores = response.data.nonCompliant_Stores;
           }

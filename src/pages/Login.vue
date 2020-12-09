@@ -68,11 +68,7 @@ export default {
         that.signIn();
       },
         500);
-
     }
-
-
-
   },
   methods: {
     async signIn () {
@@ -86,13 +82,26 @@ export default {
         width: "300px",
         allowOutsideClick: false
       });
+     
       try {
         const loginResponse = await this.myMSALObj.loginPopup(this.requestObj);
         // this.showWelcomeMessage();
-        // console.log(loginResponse)
         this.acquireTokenPopupAndCallMSGraph();
       } catch (ex) {
         console.log(ex);
+        this.$swal.close();
+        let message = '<p>' + ex.message + '</p> ';
+        if(ex.message.includes('pop') ) {
+          message += "<p>Allow Pop Ups for this domain at the top right of the url bar in your browser and then refresh this page</p>";
+        }
+        this.$swal.fire({
+          title: "Opps !",
+          html: message,
+          showConfirmButton: false,
+          showCancelButton: false,
+          width: "300px",
+          allowOutsideClick: false
+        });
       }
 
     },
@@ -129,7 +138,6 @@ export default {
       let access = false;
       let role;
       data.value.forEach(i => {
-
         if (i.mailNickname == "storemanagers" || i.mailNickname == "superadmin") {
           this.$store.dispatch('loggedIn', true)
           access = true;
