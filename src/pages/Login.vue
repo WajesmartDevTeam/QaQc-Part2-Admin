@@ -103,7 +103,6 @@ export default {
           allowOutsideClick: false
         });
       }
-
     },
 
     signOut () {
