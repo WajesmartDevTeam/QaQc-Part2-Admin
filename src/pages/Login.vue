@@ -106,8 +106,11 @@ export default {
     },
 
     signOut () {
-      this.$store.dispatch('logout', false);
-      this.myMSALObj.logout()
+      this.$store.dispatch("loggedIn", false);
+      this.$store.dispatch("logout", false);
+      this.myMSALObj.logout();
+      // this.type = "A"
+      this.$router.push("index");
 
       // window.location.href = "https://qaqc.sundryhrms.website/"
 
@@ -182,8 +185,11 @@ export default {
             '<i class="fa fa-thumbs-down"></i> Sign Out',
           width: "300px",
           allowOutsideClick: false
-        })
-        this.$signOut()
+        }).then(() => {
+            this.$store.dispatch("logout", true);
+            this.signOut();
+            //location.reload();
+          });
 
       }
      

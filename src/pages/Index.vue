@@ -141,7 +141,7 @@ export default {
       this.$store.dispatch('logout', false)
       this.myMSALObj.logout();
       // this.type = "A"
-      this.$router.push('index')
+      this.$router.push('index');
     },
     async acquireTokenPopupAndCallMSGraph () {
 
@@ -195,9 +195,10 @@ export default {
             width: "300px",
             allowOutsideClick: false
           }).then(() => {
-            this.$store.dispatch('logout', true)
-            location.reload()
-          })
+            this.$store.dispatch("logout", true);
+            this.signOut();
+            //location.reload();
+          });
 
 
 
