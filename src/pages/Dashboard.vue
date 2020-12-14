@@ -15,11 +15,11 @@
 </template>
 
 <script>
-// import { StatsCard } from "@/components";
+import { StatsCard } from "@/components";
 
 export default {
   components: {
-    // StatsCard
+    StatsCard
   },
   data () {
     return {
@@ -65,10 +65,9 @@ export default {
       this.no_of_stores =
         "<img style='margin-top: -40px;' src='http://www.broadwaybalancesamerica.com/images/ajax-loader.gif'/>";
 
-      let recent = {};
 
       if (this.role == "storeManager") {
-        recent = {
+        var recent = {
           what: "store_reports",
           showLoader: "no",
           params: {
@@ -78,7 +77,7 @@ export default {
         };
       }
       else {
-        recent = {
+        var recent = {
           what: "total_reports",
           showLoader: "no",
           params: {

@@ -1,0 +1,130 @@
+<div>
+              <h4 style="margin-top:50px;"><b>Opportunities</b></h4>
+               <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there categories we can improve range and stocking (YES/NO)
+
+                </label>
+              <div
+                id="6"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there new product lines that can be introduced to store (YES/NO)
+
+                </label>
+              <div
+                id="7"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there events we can do to increase footfall to the store? (YES/NO)
+
+                </label>
+              <div
+                id="8"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Is there a room for another store in the city? (YES/NO)
+
+                </label>
+              <div
+                id="9"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input  type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Is there room for a differentiated offering in the market (YES/NO)
+
+                </label>
+              <div
+                id="10"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there any other opportunities for improved sales at this store? (YES/NO)
+
+                </label>
+              <div
+                id="11"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+            </div>
+
+           <div>
+              <h4 style="margin-top:50px;"><b>Competition</b></h4>
+               <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there any competitor prices of note? (YES/NO)
+                </label>
+              <div
+                id="12"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Any activation in competing stores? (YES/NO)
+                </label>
+              <div
+                id="13"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+                 <div class="form-group row">
+              <label
+                for="inputPassword"
+                class="col-xs-4 col-sm-4 col-form-label"
+              >Are there any new competitors or competitor activities in the area? (YES/NO)
+                </label>
+              <div
+                id="14"
+                class="col-xs-8 col-sm-8 ans"
+              >
+                <input type="text" class="form-control">
+              </div>
+                </div>
+            </div>

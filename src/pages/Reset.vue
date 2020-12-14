@@ -100,7 +100,7 @@ export default {
       this.status.status = "Processing";
       var req = {
         what: "reset",
-        data: this.reset
+        data: reset
       };
 
       this.$socket
@@ -111,12 +111,10 @@ export default {
             this.status.message = "reset successful, redirecting...";
             window.location.href = "/login";
           }
-          console.log(response)
         })
         .catch(err => {
           this.status.status = "Error";
           this.status.message = "Invalid reset details";
-          console.log(err);
 
           setTimeout(() => {
             this.status.status = "";

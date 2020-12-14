@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34b3024b-329d-4a11-b060-b996179b6cfe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Scored_Reports.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/Non_Scored_View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/view/Scored_Report_View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/Scored_Report_View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QaQc-Part2/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../QaQc-Part2/src/request.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l1Y6ClQnzNyMvH7hobKaeLGaaw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MSQ-QAQC-Backend" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\QaQc-Part2" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34b3024b-329d-4a11-b060-b996179b6cfe" name="Default Changelist" comment="" />
+      <created>1606765886687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606765886687</updated>
+      <workItem from="1606765887815" duration="1569000" />
+      <workItem from="1606767862224" duration="2706000" />
+      <workItem from="1606975815206" duration="10595000" />
+      <workItem from="1606989905606" duration="1191000" />
+      <workItem from="1606993183088" duration="10008000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="674" y="406" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606980887649">
+      <screen x="0" y="0" width="1824" height="1216" />
+    </state>
+    <state x="674" y="406" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1824.1216@0.0.1824.1216" timestamp="1606980887649" />
+    <state x="693" y="363" key="FileChooserDialogImpl" timestamp="1606766126952">
+      <screen x="0" y="0" width="1824" height="1216" />
+    </state>
+    <state x="693" y="363" key="FileChooserDialogImpl/0.0.1824.1216@0.0.1824.1216" timestamp="1606766126952" />
+    <state x="620" y="313" width="585" height="590" key="find.popup" timestamp="1607005757624">
+      <screen x="0" y="0" width="1824" height="1216" />
+    </state>
+    <state x="620" y="313" width="585" height="590" key="find.popup/0.0.1824.1216@0.0.1824.1216" timestamp="1607005757624" />
+  </component>
+</project>

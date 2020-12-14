@@ -48,14 +48,22 @@
         <md-icon>library_books</md-icon>
         <p>Food Safety Report</p>
       </sidebar-link> -->
-      
+
       <sidebar-link
         to="/admin/scoredreports"
-        title="Scored Report"
+        title="Reports"
       >
         <md-icon>library_books</md-icon>
-        <p>Scored Report</p>
+        <p>Reports</p>
       </sidebar-link>
+
+<!--      <sidebar-link-->
+<!--          to="/admin/nonscoredreports"-->
+<!--          title="Scored Report"-->
+<!--      >-->
+<!--        <md-icon>library_books</md-icon>-->
+<!--        <p>Non Scored Report</p>-->
+<!--      </sidebar-link>-->
 
      <!-- <sidebar-link
         to="/admin/nonscoredreports"
@@ -65,33 +73,33 @@
         <p>Non Scored Report</p>
 
       </sidebar-link> -->
-      
-     <li class="active" >
-                <a data-toggle="collapse" href="#formsExamples" aria-expanded="false" class="collapsed md-list-item-content md-ripple">
-                    <i class=" md-icon md-icon-font md-theme-default">library_books</i>
-                    <p class=" md-ripple">Non Scored Report
-                      <b class="caret"></b>
-                    </p>
-                </a>
+<!--      -->
+<!--     <li class="active" >-->
+<!--                <a data-toggle="collapse" href="#formsExamples" aria-expanded="false" class="collapsed md-list-item-content md-ripple">-->
+<!--                    <i class=" md-icon md-icon-font md-theme-default">library_books</i>-->
+<!--                    <p class=" md-ripple">Non Scored Report-->
+<!--                      <b class="caret"></b>-->
+<!--                    </p>-->
+<!--                </a>-->
 
-                <div class="collapse" id="formsExamples" aria-expanded="false" style="height: 0px;">
-                    <ul class="nav side- md-list md-theme-default">
-                        <li class="active md-list-item">
-                            <router-link to="/admin/opportunitiesview/:id" title="" data-color="orange" class="md-list-item-router md-list-item-container md-button-clean">
-                               
-                                <p class="sidebar-normal  md-ripple"> Opportunities </p>
-                            </router-link>
-                        </li>
-                        <li class="active md-list-item">
-                            <router-link to="/admin/competitionview/:id" class="md-list-item-router md-list-item-container md-button-clean">
-                                
-                                <p class="sidebar-normal md-ripple"> Competition </p>
-                            </router-link>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </li>
+<!--                <div class="collapse" id="formsExamples" aria-expanded="false" style="height: 0px;">-->
+<!--                    <ul class="nav side- md-list md-theme-default">-->
+<!--                        <li class="active md-list-item">-->
+<!--                            <router-link to="/admin/opportunitiesview/:id" title="" data-color="orange" class="md-list-item-router md-list-item-container md-button-clean">-->
+<!--                               -->
+<!--                                <p class="sidebar-normal  md-ripple"> Opportunities </p>-->
+<!--                            </router-link>-->
+<!--                        </li>-->
+<!--                        <li class="active md-list-item">-->
+<!--                            <router-link to="/admin/competitionview/:id" class="md-list-item-router md-list-item-container md-button-clean">-->
+<!--                                -->
+<!--                                <p class="sidebar-normal md-ripple"> Competition </p>-->
+<!--                            </router-link>-->
+<!--                        </li>-->
+<!--                        -->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </li>-->
       
            
     <!--  <sidebar-link

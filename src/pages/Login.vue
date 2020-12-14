@@ -23,13 +23,18 @@ export default {
       myMSALObj: null,
       msalConfig: {
         auth: {
-          clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
+          
+          // clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
+          clientId: '0130e8b2-3895-48a0-aaf5-69d3f69ad855', //This is your client ID
           authority: "https://login.microsoftonline.com/ce18dbbe-5ce8-4dac-bbcc-874dba4c0a40",
-          postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          // postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          postLogoutRedirectUri: "https://qaqc-admin.marketsquareng.website/",
         }
       },
       graphConfig: {
-        graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf"
+        graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf",
+        // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/e360bff7-b072-46b5-b3c3-642716ebf740/members"
+        
       },
       requestObj: {
         scopes: ["group.read.all"]
@@ -65,11 +70,7 @@ export default {
         that.signIn();
       },
         500);
-
     }
-
-
-
   },
   methods: {
     async signIn () {
@@ -83,20 +84,35 @@ export default {
         width: "300px",
         allowOutsideClick: false
       });
+     
       try {
         const loginResponse = await this.myMSALObj.loginPopup(this.requestObj);
         // this.showWelcomeMessage();
-        // console.log(loginResponse)
         this.acquireTokenPopupAndCallMSGraph();
       } catch (ex) {
         console.log(ex);
+        this.$swal.close();
+        let message = '<p>' + ex.message + '</p> ';
+        if(ex.message.includes('pop') ) {
+          message += "<p>Allow Pop Ups for this domain at the top right of the url bar in your browser and then refresh this page</p>";
+        }
+        this.$swal.fire({
+          title: "Opps !",
+          html: message,
+          showConfirmButton: false,
+          showCancelButton: false,
+          width: "300px",
+          allowOutsideClick: false
+        });
       }
-
     },
 
     signOut () {
-      this.$store.dispatch('logout', false);
-      this.myMSALObj.logout()
+      this.$store.dispatch("loggedIn", false);
+      this.$store.dispatch("logout", false);
+      this.myMSALObj.logout();
+      // this.type = "A"
+      this.$router.push("index");
 
       // window.location.href = "https://qaqc.sundryhrms.website/"
 
@@ -126,8 +142,7 @@ export default {
       let access = false;
       let role;
       data.value.forEach(i => {
-
-        if (i.mailNickname == "storemanagers" || i.mailNickname == "superadmins") {
+        if (i.mailNickname == "storemanagers" || i.mailNickname == "superadmin") {
           this.$store.dispatch('loggedIn', true)
           access = true;
           role = i.mailNickname;
@@ -172,8 +187,11 @@ export default {
             '<i class="fa fa-thumbs-down"></i> Sign Out',
           width: "300px",
           allowOutsideClick: false
-        })
-        this.$signOut()
+        }).then(() => {
+            this.$store.dispatch("logout", true);
+            this.signOut();
+            //location.reload();
+          });
 
       }
      

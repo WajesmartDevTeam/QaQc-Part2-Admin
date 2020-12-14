@@ -329,7 +329,7 @@ export default {
     },
 
     searchOnTable () {
-      this.searched = this.searchByName(this.action_plans, this.search);
+      this.searched = searchByName(this.action_plans, this.search);
     },
     edit (task_id, questionno) {
 

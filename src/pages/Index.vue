@@ -70,13 +70,16 @@ export default {
       myMSALObj: null,
       msalConfig: {
         auth: {
-          clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
+          
+          // clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
+          clientId: '0130e8b2-3895-48a0-aaf5-69d3f69ad855', //This is your client ID
           authority: "https://login.microsoftonline.com/ce18dbbe-5ce8-4dac-bbcc-874dba4c0a40",//This is your tenant info
-          postLogoutRedirectUri: "https://qaqc.sundryhrms.website/"
+          postLogoutRedirectUri: "https://qaqc-admin.marketsquareng.website/"
         }
       },
       graphConfig: {
         // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/bc01e981-740d-48f7-b430-ad01d7995c98/members"
+        // graphMeEndpoint: "https://graph.microsoft.com/v1.0/groups/e360bff7-b072-46b5-b3c3-642716ebf740/members"
         graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/memberOf"
       },
       requestObj: {
@@ -124,10 +127,12 @@ export default {
       try {
         const loginResponse = await this.myMSALObj.loginPopup(this.requestObj);
         // this.showWelcomeMessage();
-        // console.log(loginResponse)
+        
+        console.log(loginResponse)
         this.acquireTokenPopupAndCallMSGraph();
       } catch (ex) {
         console.log(ex);
+        
       }
 
     },
@@ -137,7 +142,7 @@ export default {
       this.$store.dispatch('logout', false)
       this.myMSALObj.logout();
       // this.type = "A"
-      this.$router.push('index')
+      this.$router.push('index');
     },
     async acquireTokenPopupAndCallMSGraph () {
 
@@ -191,9 +196,10 @@ export default {
             width: "300px",
             allowOutsideClick: false
           }).then(() => {
-            this.$store.dispatch('logout', true)
-            location.reload()
-          })
+            this.$store.dispatch("logout", true);
+            this.signOut();
+            //location.reload();
+          });
 
 
 

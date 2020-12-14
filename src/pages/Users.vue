@@ -41,8 +41,8 @@
                 <template scope="{ row }">
                   <tr>
                     <td>{{ users.indexOf(row) + 1 }}</td>
-                    <td>{{ row.firstName }}</td>
-                    <td>{{ row.lastName }}</td>
+                    <td>{{ row.first_name }}</td>
+                    <td>{{ row.last_name }}</td>
                     <td>{{ row.email }}</td>
                     <!-- <td>{{ row.phone }}</td> -->
                     <td>{{ row.role }}</td>
@@ -128,7 +128,7 @@
                     <md-field>
                       <label>First Name</label>
                       <md-input
-                        v-model="user.firstName"
+                        v-model="user.first_name"
                         required
                       ></md-input>
                     </md-field>
@@ -137,7 +137,7 @@
                     <md-field>
                       <label>Last Name</label>
                       <md-input
-                        v-model="user.lastName"
+                        v-model="user.last_name"
                         required
                       ></md-input>
                     </md-field>
@@ -192,7 +192,7 @@
                           v-for="store in stores"
                           v-bind:key="store.id"
                           v-bind:value="store.id"
-                        >{{store.address +", "+ store.location}}</md-option>
+                        >{{store.name}}</md-option>
 
                       </md-select>
                     </md-field>
@@ -297,7 +297,7 @@ export default {
     };
   },
   mounted () {
-    this.stores = this.$store.getters.stores
+    // this.stores = this.$store.getters.stores
   },
   watch: {
     cpassword: function (val) {
@@ -315,12 +315,27 @@ export default {
 
   created () {
     this.fetchUsers();
+    this.getStores();
     this.searched = this.users;
   },
 
   methods: {
+    getStores: function() {
+      var req = {
+        what: "stores"
+      };
+      this.$socket
+          .makeGetRequest(req)
+          .then(response => {
+            console.log(response.data);
+            this.stores = response.data;
+          })
+          .catch(error => {
+            console.log(error);
+          });
+    },
     searchOnTable () {
-      this.searched = this.searchByName(this.users, this.search);
+      // this.searched = this.searchByName(this.users, this.search);
     },
     fetchUsers () {
 
@@ -336,7 +351,7 @@ export default {
         allowOutsideClick: false
       });
 
-      let recent = {
+      var recent = {
         what: "users",
         showLoader: "yes",
 
@@ -347,7 +362,7 @@ export default {
         .then(response => {
           if (response.type == "users") {
 
-            this.users = response.data
+            this.users = response.data.reverse()
             // this.$swal.fire("Success", response.data.message, "success");
           }
         })
@@ -368,9 +383,8 @@ export default {
         width: "380px",
         allowOutsideClick: false
       });
-      let recent = {};
       if (this.edit == false) {
-        recent = {
+        var recent = {
           what: "register",
           data: this.user
         };
@@ -390,7 +404,7 @@ export default {
           });
       }
       else {
-        recent = {
+        var recent = {
           what: "edit",
           data: this.user
         };
@@ -455,8 +469,8 @@ export default {
       this.edit = true;
       this.listusers = false;
       // this.user.id = user.id;
-      this.user.firstName = user.firstName;
-      this.user.lastName = user.lastName;
+      this.user.first_name = user.firstName;
+      this.user.last_name = user.lastName;
       this.user.phone = user.phone;
       this.user.email = user.email;
       // this.user.role = user.role;

@@ -107,7 +107,6 @@ export default {
         })
         .catch(e => {
           this.status.status = "Error";
-          console.log(e)
           this.status.message =
             "password and confirm password fields mismatch. Please Try Again!!!";
           setTimeout(() => {
