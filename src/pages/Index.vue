@@ -71,8 +71,8 @@ export default {
       msalConfig: {
         auth: {
           
-          // clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
-          clientId: '0130e8b2-3895-48a0-aaf5-69d3f69ad855', //This is your client ID
+          clientId: 'dfd74765-cfab-4e7f-bdcb-c619d600dfee', //This is your client ID
+          // clientId: '0130e8b2-3895-48a0-aaf5-69d3f69ad855', //This is your client ID
           authority: "https://login.microsoftonline.com/ce18dbbe-5ce8-4dac-bbcc-874dba4c0a40",//This is your tenant info
           postLogoutRedirectUri: "https://qaqc-admin.marketsquareng.website/"
         }
