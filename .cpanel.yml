@@ -2,4 +2,5 @@ deployment:
     tasks:
           - export DEPLOYPATH=../../qaqc-admin.marketsquareng.website/
           - /bin/cp -R dist/* $DEPLOYPATH
+          
 
