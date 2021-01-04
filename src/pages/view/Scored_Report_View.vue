@@ -21,7 +21,7 @@
                 id="1"
                 class="col-xs-8 col-sm-8 ans"
               >
-                <p class="form-control"></p>
+                <p class="form-control" v-html="store.username"></p>
               </div>
             </div>
             <div class="form-group row">
@@ -33,7 +33,7 @@
                 id="2"
                 class="col-xs-8 col-sm-8 ans"
               >
-                <p class="form-control"></p>
+                <p class="form-control" v-html="store.date"></p>
               </div>
             </div>
             <div class="form-group row">
@@ -46,7 +46,7 @@
                 id="3"
                 class="col-xs-8 col-sm-8 ans"
               >
-                <p class="form-control"></p>
+                <p class="form-control" v-html="store.name" ></p>
               </div>
             </div>
             <div class="form-group row">
@@ -60,7 +60,7 @@
                 id="4"
                 class="col-xs-8 col-sm-8 ans"
               >
-                <p class="form-control"></p>
+                <p class="form-control" v-html="store.store_manager"></p>
               </div>
             </div>
             <div class="form-group row">
@@ -73,7 +73,7 @@
                 id="5"
                 class="col-xs-8 col-sm-8 ans"
               >
-                <p class="form-control"></p>
+                <p class="form-control" v-html="store.day"></p>
               </div>
             </div>
             <table class="table table-bordered">
@@ -84,206 +84,22 @@
                 <th>Percent</th>
               </thead>
               <tbody>
-                <tr>
-                  <td>Store Exterior</td>
-                  <td
-                    id="6"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>85</td>
-                  <td
-                    id="7"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>Merchandise</td>
-                  <td
-                    id="8"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                  <td>95</td>
-                  <td
-                    id="9"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>Production</td>
-                  <td
-                    id="10"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                  <td>45</td>
-                  <td
-                    id="11"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>Checkout</td>
-                  <td
-                    id="12"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  
-                  <td>35</td>
-                  <td
-                    id="13"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>In-Store Displays</td>
-                  <td
-                    id="14"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>40</td>
-                  <td
-                    id="15"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Warehouse</td>
-                  <td
-                    id="16"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>50</td>
-                  <td
-                    id="17"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-              <tr>
-                  <td>Staff</td>
-                  <td
-                    id="18"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>40</td>
-                  <td
-                    id="19"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-               <tr>
-                  <td>General</td>
-                  <td
-                    id="20"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>45</td>
-                  <td
-                    id="21"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-               <tr>
-                  <td>Loss Prevention</td>
-                  <td
-                    id="22"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>65</td>
-                  <td
-                    id="23"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-               <tr>
-                  <td>Store Opening</td>
-                  <td
-                    id="24"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>55</td>
-                  <td
-                    id="25"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-               <tr>
-                  <td>Store Closing</td>
-                  <td
-                    id="26"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                  <td>25</td>
-                  <td
-                    id="27"
-                    class="ans"
-                  >
-                    <p></p>
-                  </td>
-                </tr>
-              <tr>
-                  <td>Night Time Visitation</td>
+                <tr v-for="(section, index) in sections" v-bind:key="index">
+                  <td v-html="section.section_name"></td>
                   <td
                     id="28"
                     class="ans"
                   >
-                    <p></p>
+                    <p v-html="section.points_earned"></p>
                   </td>
-                  <td>30</td>
+                  <td v-html="section.possible_points"></td>
                   <td
                     id="29"
                     class="ans"
                   >
-                    <p></p>
+                    <p v-html="section.total_percent"></p>
                   </td>
                 </tr>
-
-
               </tbody>
               <tfoot class="total">
                 <tr>
@@ -292,45 +108,32 @@
                     id="30"
                     class="points ans"
                   >
-                    <p></p>
+                    <p v-html="earned_total"></p>
                   </th>
-                  <th>610</th>
+                  <th v-html="possible_total"></th>
                   <th
                     id="31"
                     class="percent ans"
                   >
-                    <p></p>
+                    <p v-html="percent_total"></p>
                   </th>
                 </tr>
               </tfoot>
             </table>
             <h5 class="subtitle">Comments</h5>
-            <div class="form-group">
+            <div class="form-group" v-for="(answer, index) in answers" v-bind:key="index" >
               <label
                 for="inputPassword"
                 class="form-label"
-              >Top 5 things the store did well:</label>
+              >{{answer.questiontext}}:</label>
               <div
                 id="32"
                 class="ans"
               >
-                <p class="form-box"></p>
+                <p class="form-box" v-html="answer.answers"></p>
 
               </div>
-            </div>
-            <div class="form-group">
-              <label
-                for="inputPassword"
-                class="form-label"
-              >Top 5 things the store needs to improve on: </label>
-              <div
-                id="33"
-                class="ans"
-              >
-                <p class="form-box"></p>
-              </div>
-            </div>
-            
+            </div>            
           </div>
           <div class="row ">
             <div
@@ -339,7 +142,7 @@
               class="col-4 h-25"
             >
               <img
-                :src="'http://qa.sundryhrms.website'+img"
+                :src="'http://qaqc-back.marketsquareng.website/'+img.answers"
                 class="img-fluid"
                 style="height: 200px;"
               >
@@ -354,51 +157,78 @@
 
 <script>
 export default {
+  props : ['id', 'date'],
   data () {
     return {
+      // values: [],
+      sections: [],
+      images: [],
+      store: [],
+      answers: [],
 
-      images: {}
     };
   },
-  mounted () {
-    this.getForm(this.$route.params.id);
+  created () {
+    this.getForm();
+  },
+  computed : {
+    earned_total() {
+      if(this.sections.length != 0) {
+        let sum = 0;
+        this.sections.forEach(section => {
+          sum += parseInt(section.points_earned);
+        });
+        return sum;
+      } else {
+        return 0;
+      }
+    },
 
+    possible_total () {
+      if(this.sections.length != 0) {
+        let sum = 0;
+        this.sections.forEach(section => {
+          sum += parseInt(section.possible_points);
+        });
+        return sum;
+      } else {
+        return 0;
+      }
+    },
+
+    percent_total () {
+      if(this.sections.length != 0) {
+        let sum = 0, i = 0;
+        this.sections.forEach(section => {
+          sum += parseFloat(section.total_percent);
+          ++i;
+        });
+        console.log(sum);
+        return Math.round(((sum / 100) / i) * 100);
+      } else {
+        return 0;
+      }
+    }
   },
   methods: {
-    getForm (id) {
+    getForm () {
       var recent = {
         what: "scoredreportview",
-        // showLoader: "no",
         params: {
-          form_id: id
+          store_id: this.id,
+          filter: this.date
         }
       };
-
       this.$socket
         .makeGetRequest(recent)
         .then(response => {
-          if (response.type == "scoredreportview") {
-            // console.log(response)
-            for (let i = 0; i <= 33; i++) {
-              response.data.forEach(item => {
-                if (i == item.questionno) {
-                  // console.log(item.questiontext)
-                  if (item.questiontext == "Restaurant/Location Restaurant/Location") {
-                    let stores = this.$store.getters.stores
-                    stores.forEach(j => {
-                      if (j.id == item.answers) {
-                        item.answers = j.address + ", " + j.location;
-                        console.log(item.answers)
-                      }
-                    })
-                  }
-                  document.getElementById(i).querySelectorAll("p")[0].innerHTML = item.answers
-
-                }
-              });
-            }
-
-            this.images = response.images;
+          if (response.status) {
+            console.log(response.data)
+            let {store, answers, sections, images} = response.data;
+            this.store = store;
+            this.sections = sections;
+            this.answers = answers;
+            this.images = images;
           }
         })
         .catch(e => {
@@ -407,6 +237,27 @@ export default {
     }
   }
 };
+            // console.log(response)
+            // for (let i = 0; i <= 33; i++) {
+            //   response.data.forEach(item => {
+            //     if (i == item.questionno) {
+            //       // console.log(item.questiontext)
+            //       if (item.questiontext == "Restaurant/Location Restaurant/Location") {
+            //         let stores = this.$store.getters.stores
+            //         stores.forEach(j => {
+            //           if (j.id == item.answers) {
+            //             item.answers = j.address + ", " + j.location;
+            //             console.log(item.answers)
+            //           }
+            //         })
+            //       }
+            //       document.getElementById(i).querySelectorAll("p")[0].innerHTML = item.answers
+
+            //     }
+            //   });
+            // }
+
+            // this.images = response.images;
 </script>
 <style scoped>
 .form-box {
@@ -415,3 +266,4 @@ export default {
   padding: 5px;
 }
 </style>
+
